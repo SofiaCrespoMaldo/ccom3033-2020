@@ -1,0 +1,27 @@
+// ScholarCOMPASS Tutorias CCOM3033
+// Autora: Sofia I. Crespo Maldonado
+// Este programa permite que la funcion suma acepte dos enteros
+// e imprimira la suma de estos. Si se invoca con menos de dos
+// enteros, le asignara 0 por default a ese argumento.
+
+#include <iostream>
+using namespace std;
+
+// Prototipo de funcion suma
+void suma(int = 0, int = 0);
+
+int main(){
+
+  // Invocar suma para probar el default.
+  suma(7,3); // expected output: 10
+  suma(5); // expected output: 5
+  suma(); // expected output: 0
+
+  return 0;
+}
+
+// Funcion suma.
+void suma(int a, int b){
+
+  cout << "La suma de " << a << " y " << b << " es igual a " << a + b << endl;
+}
