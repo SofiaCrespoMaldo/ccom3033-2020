@@ -1,0 +1,24 @@
+// ScholarCOMPASS Tutorias CCOM3033
+// Autora: Sofia I. Crespo Maldonado
+// Este programa permite que el usuario ingrese un entero
+// e imprime la mitad de este a traves de una funcion.
+
+#include <iostream>
+using namespace std;
+
+// Funcion que acepta un entero e imprime la mitad junto con un mensaje.
+void mitad(int a){
+  cout << "La mitad de " << a << " es " << a/2 << endl;
+}
+
+int main(){
+  int num; // Crear variable para el entero.
+  
+  // Permitir al usuario ingresar el numero deseado.
+  cout << "Ingrese el numero a dividir: " << endl;
+  cin >> num; // Guardar numero en variable num.
+  
+  mitad(num); // Invocar la funcion.
+
+  return 0;
+}
